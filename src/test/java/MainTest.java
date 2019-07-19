@@ -1,4 +1,5 @@
-import com.lkop.project2ndchance.*;
+import org.lkop.project2ndchance.StringCheck;
+import org.lkop.project2ndchance.ProposalData;
 import org.junit.Test;
 
 
@@ -8,9 +9,6 @@ public class MainTest {
     public void run(){
 
         StringCheck sc = new StringCheck("4.txt");
-       
-        System.out.println(sc.getName());
-                
         
         ProposalData p_data = new ProposalData();
         
