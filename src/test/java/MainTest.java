@@ -8,12 +8,18 @@ public class MainTest {
     @Test
     public void run(){
 
-        StringCheck sc = new StringCheck("4.txt");
+        StringCheck sc = new StringCheck("proposal-12345.txt");
         
         ProposalData p_data = new ProposalData();
         
+        //p_data.setEmail(sc.getEmail());
         p_data.setName(sc.getName());
+        p_data.setLastname(sc.getLastname());
+
         
+        System.out.println("p_data= " + p_data.getId());
         System.out.println("p_data= " + p_data.getName());
+        System.out.println("p_data= " + p_data.getLastname());
+        System.out.println("p_data= " + p_data.getEmail());
     }
 }
