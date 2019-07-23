@@ -1,0 +1,19 @@
+Student
+
+Name: Loukas
+Lastname: Kopanias
+University: University of Peloponnese
+Semester: 4
+
+Email: example@test.com
+
+
+
+
+
+
+Mentor
+
+Name: MentorName
+Lastname: MentorLastname
+Email: mentor@test.com

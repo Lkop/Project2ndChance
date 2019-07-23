@@ -1,0 +1,17 @@
+Award 1
+Prize: 1000
+
+Award 2
+Prize: 16000
+
+Award 3
+Prize: 15000
+
+Award 4
+Prize: 154000
+
+Award 5
+Prize: 13000
+
+Award 6
+Prize: 600

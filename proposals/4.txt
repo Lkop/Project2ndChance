@@ -1,4 +1,0 @@
-Name: Loukas
-Lastname: Kopanias
-
-Email: example@test.com
