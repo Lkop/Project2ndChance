@@ -17,9 +17,10 @@ public class FileCheck {
     
         try {
             
-            File p_file = new File(pr_dir + "/" + filename);
+            File p_file = new File(System.getProperty("APP_DIR",".") + "/" + pr_dir + "/" + filename);
             
             System.out.println("Is file readable? " + p_file.canRead());
+            System.out.println(System.getProperty("APP_DIR",".") + "/" + pr_dir + "/" + filename);
             
             if(p_file.canRead() == true){
                 
