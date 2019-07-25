@@ -7,9 +7,6 @@ import java.io.FileReader;
 
 public class FileCheck {
    
-    private String pr_dir = "proposals";
-    private String aw_dir = "awards";
-    
     private BufferedReader br = null;
     private boolean is_ok = false;
   
@@ -17,10 +14,9 @@ public class FileCheck {
     
         try {
             
-            File p_file = new File(System.getProperty("APP_DIR",".") + "/" + pr_dir + "/" + filename);
+            File p_file = new File(filename);
             
             System.out.println("Is file readable? " + p_file.canRead());
-            System.out.println(System.getProperty("APP_DIR",".") + "/" + pr_dir + "/" + filename);
             
             if(p_file.canRead() == true){
                 

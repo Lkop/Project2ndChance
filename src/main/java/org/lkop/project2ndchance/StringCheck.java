@@ -70,5 +70,26 @@ public class StringCheck extends FileCheck {
            
         }
         return null;
-    }   
+    }
+    
+    public int getSemester(){
+    
+        try {
+            String str = getBR().readLine();
+            
+            while (str != null){
+ 
+                String[] str_split = str.split(" ");
+
+                if(str_split[0].equalsIgnoreCase("semester:")){
+                    return Integer.parseInt(str_split[1]);
+                }
+                
+                str = getBR().readLine();
+            }
+        }catch(IOException e){
+           
+        }
+        return 0;
+    } 
 }
