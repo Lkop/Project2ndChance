@@ -1,95 +1,66 @@
 package org.lkop.project2ndchance;
 
-import java.io.IOException;
-
-public class StringCheck extends FileCheck {
+public class StringCheck {
     
-    public StringCheck(String my_file){
-    
-        super(my_file);
-    }
-    
-    public String getName(){
+    //proposal methods
+    public String getName(String string){
         
-        try {
-            String str = getBR().readLine();
-            
-            while (str != null){
-                
-                String[] str_split = str.split(" ");
-                
-                if(str_split[0].equalsIgnoreCase("name:")){
-                    return str_split[1];
-                }
-                
-                str = getBR().readLine();
-            }
-        }catch(IOException e){
-           
-        }
+        String[] str_split = string.split(" ");
+        
+        if(str_split[0].equalsIgnoreCase("name:")){
+            return str_split[1];
+        } 
         return null;
     }
     
-    public String getLastname(){
+    public String getLastname(String string){
 
-        try {
-            String str = getBR().readLine();
-            
-            while (str != null){
-               
-                String[] str_split = str.split(" ");
-
-                if(str_split[0].equalsIgnoreCase("lastname:")){
-                    return str_split[1];
-                }
-                
-                str = getBR().readLine();
-            }
-        }catch(IOException e){
-           
-        }
+        String[] str_split = string.split(" ");
+        
+        if(str_split[0].equalsIgnoreCase("lastname:")){
+            return str_split[1];
+        } 
         return null;
     }
     
-    public String getEmail(){
+    public String getEmail(String string){
     
-        try {
-            String str = getBR().readLine();
-            
-            while (str != null){
- 
-                String[] str_split = str.split(" ");
-
-                if(str_split[0].equalsIgnoreCase("email:")){
-                    return str_split[1];
-                }
-                
-                str = getBR().readLine();
-            }
-        }catch(IOException e){
-           
-        }
+        String[] str_split = string.split(" ");
+        
+        if(str_split[0].equalsIgnoreCase("email:")){
+            return str_split[1];
+        } 
         return null;
     }
     
-    public int getSemester(){
-    
-        try {
-            String str = getBR().readLine();
-            
-            while (str != null){
- 
-                String[] str_split = str.split(" ");
-
-                if(str_split[0].equalsIgnoreCase("semester:")){
-                    return Integer.parseInt(str_split[1]);
-                }
-                
-                str = getBR().readLine();
-            }
-        }catch(IOException e){
-           
+    public int getSemester(String string){
+        
+        String[] str_split = string.split(" ");
+        
+        if(str_split[0].equalsIgnoreCase("semester:")){
+            return Integer.parseInt(str_split[1]);
         }
         return 0;
-    } 
+    }
+    
+    //awards methods
+    public int getId(String string){
+    
+        String[] str_split = string.split(" ");
+        
+        if(str_split[0].equalsIgnoreCase("award")){
+            return Integer.parseInt(str_split[1]);
+        }
+        return 0;
+    }
+    
+    public int getPrize(String string){
+        
+        String[] str_split = string.split(" ");
+        
+        if(str_split[0].equalsIgnoreCase("prize:")){
+            return Integer.parseInt(str_split[1]);
+        }
+        return 0;
+    }
 }
