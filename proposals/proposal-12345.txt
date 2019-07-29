@@ -1,4 +1,4 @@
-Student
+<--Student-->
 
 Name: Loukas
 Lastname: Kopanias
@@ -12,7 +12,7 @@ Email: example@test.com
 
 
 
-Mentor
+<--Mentor-->
 
 Name: MentorName
 Lastname: MentorLastname
