@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.lkop</groupId>
     <artifactId>Project2ndChance</artifactId>
-    <version>2.0.0</version>
+    <version>2.1.1</version>
     <packaging>jar</packaging>
     <dependencies>
         <dependency>
@@ -12,7 +12,7 @@
             <version>4.12</version>
             <scope>test</scope>
             <type>jar</type>
-        </dependency>
+        </dependency>  
     </dependencies>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
