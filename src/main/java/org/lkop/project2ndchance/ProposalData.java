@@ -1,12 +1,16 @@
 package org.lkop.project2ndchance;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 public class ProposalData {
     
-    private int id=0;
+    private static final AtomicInteger count = new AtomicInteger(0); 
+    private int id;
     private String name;
     private String lastname;
     private String email;
     private int semester;
+    private boolean phase_pass;
     
     //mentor's data
     private String mname;
@@ -16,7 +20,7 @@ public class ProposalData {
     
     public ProposalData(){
 
-        this.id++;
+        this.id = count.incrementAndGet();
     }
     
     public int getId(){
@@ -62,6 +66,16 @@ public class ProposalData {
     public int getSemester(){
     
         return this.semester;
+    }
+    
+    public void setPhasePass(boolean phase_pass){
+    
+        this.phase_pass = phase_pass;
+    }
+    
+    public boolean getPhasePass(){
+    
+        return this.phase_pass;
     }
     
     //mentor's methods
