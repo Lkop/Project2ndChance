@@ -1,0 +1,17 @@
+<--Developer-->
+
+Name: Nick
+Lastname: Papadopoulos
+University: University of Athens
+Semester: 6
+Phase pass: yes
+
+Email: example@test.com
+
+
+
+<--Mentor-->
+
+Name: MentorName2
+Lastname: MentorLastname2
+Email: mentor@test.com
