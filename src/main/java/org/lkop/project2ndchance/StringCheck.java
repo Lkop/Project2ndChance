@@ -43,6 +43,19 @@ public class StringCheck {
         return 0;
     }
     
+    public boolean getPhasePass(String string){
+        
+        String[] str_split = string.split(": ");
+        
+        if(str_split[0].equalsIgnoreCase("phase pass")){
+            
+            if(str_split[1].equalsIgnoreCase("yes")){
+                return true;
+            }
+        }
+        return false;
+    }
+    
     //awards methods
     public int getId(String string){
     
