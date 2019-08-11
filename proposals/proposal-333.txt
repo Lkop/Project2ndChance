@@ -4,7 +4,7 @@ Name: Nick
 Lastname: Papadopoulos
 University: University of Athens
 Semester: 6
-Phase pass: yes
+
 
 Email: example@test.com
 
@@ -15,3 +15,12 @@ Email: example@test.com
 Name: MentorName2
 Lastname: MentorLastname2
 Email: mentor@test.com
+
+
+<--Information-->
+
+Start date: 15-01-2019
+End date: 31-08-2019
+
+Phase pass: yes
+Project done: yes
