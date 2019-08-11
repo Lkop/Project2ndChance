@@ -1,5 +1,6 @@
 package org.lkop.project2ndchance;
 
+import java.time.LocalDate;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class ProposalData {
@@ -10,17 +11,24 @@ public class ProposalData {
     private String lastname;
     private String email;
     private int semester;
-    private boolean phase_pass;
+
     
     //mentor's data
     private String mname;
     private String mlastname;
     private String memail;
     
+    //information data
+    private boolean phase_pass;
+    private boolean final_pass;
+    private LocalDate start_date;
+    private LocalDate end_date;
     
     public ProposalData(){
 
         this.id = count.incrementAndGet();
+        this.phase_pass = false;
+        this.final_pass = false;
     }
     
     public int getId(){
@@ -68,16 +76,6 @@ public class ProposalData {
         return this.semester;
     }
     
-    public void setPhasePass(boolean phase_pass){
-    
-        this.phase_pass = phase_pass;
-    }
-    
-    public boolean getPhasePass(){
-    
-        return this.phase_pass;
-    }
-    
     //mentor's methods
     public void setMName(String name){
     
@@ -108,4 +106,46 @@ public class ProposalData {
     
         return this.memail;
     }
+    
+    //information methods
+    public void setPhasePass(boolean phase_pass){
+    
+        this.phase_pass = phase_pass;
+    }
+    
+    public boolean getPhasePass(){
+    
+        return this.phase_pass;
+    }
+    
+    public void setFinalPass(boolean final_pass){
+    
+        this.final_pass = final_pass;
+    }
+    
+    public boolean getFinalPass(){
+    
+        return this.final_pass;
+    }
+    
+    public void setStartDate(LocalDate start_date){
+    
+        this.start_date = start_date;
+    }
+    
+    public LocalDate getStartDate(){
+    
+        return this.start_date;
+    }
+    
+    public void setEndDate(LocalDate end_date){
+    
+        this.end_date = end_date;
+    }
+    
+    public LocalDate getEndDate(){
+    
+        return this.end_date;
+    }
+   
 }
