@@ -1,0 +1,15 @@
+<--Developer-->
+
+Name: MyName
+Lastname: MyLastName
+University: MyUniversity
+Semester: 6
+
+ProposalTitle: MyTitle
+ProposalUrl: http://myproposal.org
+
+Email: mymail@test.com
+
+
+
+
