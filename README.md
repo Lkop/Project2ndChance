@@ -31,7 +31,7 @@ Awards are located in a folder named "awards".
 Prints every developer who finished successfully their project.
 
 
-### Instrucions
+### Instructions
 1. Awards are uploaded to the folder called "awards" and checked for any mistake.
 1. Developers upload their proposals to "proposals" folder through a PR.
 1. Mentors make a PR with their details.
