@@ -11,6 +11,8 @@ public class ProposalData {
     private String lastname;
     private String email;
     private int semester;
+    private String pr_title;
+    private String pr_url;
 
     
     //mentor's data
@@ -74,6 +76,26 @@ public class ProposalData {
     public int getSemester(){
     
         return this.semester;
+    }
+    
+    public void setPrTitle(String pr_title){
+    
+        this.pr_title = pr_title;
+    }
+    
+    public String getPrTitle(){
+    
+        return this.pr_title;
+    }
+    
+    public void setPrUrl(String pr_url){
+    
+        this.pr_url = pr_url;
+    }
+    
+    public String getPrUrl(){
+    
+        return this.pr_url;
     }
     
     //mentor's methods
