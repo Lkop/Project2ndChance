@@ -5,8 +5,8 @@ Lastname: MyLastName
 University: MyUniversity
 Semester: 6
 
-ProposalTitle: MyTitle
-ProposalUrl: http://myproposal.org
+Proposal Title: MyTitle
+Proposal Url: http://myproposal.org
 
 Email: mymail@test.com
 
