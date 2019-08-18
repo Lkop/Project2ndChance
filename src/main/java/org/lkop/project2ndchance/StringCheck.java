@@ -46,6 +46,26 @@ public class StringCheck {
         return 0;
     }
 
+    public String getPrTitle(String string){
+    
+        String[] str_split = string.split(": ");
+        
+        if(str_split[0].equalsIgnoreCase("proposal title")){
+            return str_split[1];
+        } 
+        return null;
+    }
+    
+    public String getPrUrl(String string){
+    
+        String[] str_split = string.split(": ");
+        
+        if(str_split[0].equalsIgnoreCase("proposal url")){
+            return str_split[1];
+        } 
+        return null;
+    }
+        
     //awards methods
     public int getId(String string){
     
