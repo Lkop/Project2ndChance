@@ -4,7 +4,8 @@ Name: Nick
 Lastname: Papadopoulos
 University: University of Athens
 Semester: 6
-
+Proposal Title: EXAMPLE
+Proposal Url: http://dit.org
 
 Email: example@test.com
 
